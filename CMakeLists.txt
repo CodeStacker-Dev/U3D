@@ -23,6 +23,9 @@
 # Set CMake minimum version
 cmake_minimum_required (VERSION 3.10.2)
 
+# Policy CMP0177 is not set: install() DESTINATION paths are normalized. 
+cmake_policy(SET CMP0177 NEW)
+
 # Set project name
 project (Urho3D)
 
